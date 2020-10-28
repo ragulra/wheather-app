@@ -1,0 +1,67 @@
+
+ .defaultPro{
+    font-family: "object-fit:cover";
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hrefLink
+{
+  color:  #ff5400;
+}
+
+.skyPg
+{
+    background-image: url('https://images.unsplash.com/photo-1592900548634-e2fbad4a9fa0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');
+    /* filter: brightness(55%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3eded;
+}
+.rainPg
+{
+    background-image: url('https://images.unsplash.com/photo-1498847559558-1e4b1a7f7a2f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');
+    /* filter: brightness(55%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3eded;
+}
+.thunderPg
+{
+    background-image: url('https://images.unsplash.com/photo-1503753611162-ac7f3aa44d61?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;w=1000&amp;q=80');
+    /* filter: brightness(55%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3eded;
+}
+
+.windPg
+{
+    background-image: url('https://images.unsplash.com/photo-1584335204568-b440757daca1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');
+    /* filter: brightness(55%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3eded;
+}
+
+.overcastPg
+{
+    background-image: url('https://images.unsplash.com/photo-1524313071836-4bd44e8a2a95?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');
+    /* filter: brightness(55%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3eded;
+}
+
+
+.snowPg
+{
+    background-image: url('https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;w=1000&amp;q=80');
+    /* filter: brightness(55%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3eded;
+}

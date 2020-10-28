@@ -1,21 +1,25 @@
-<!-- [ngStyle]="(arrayitems.isedit && !arrayitems.iserror) ? {'background-color': getBackgroundColor(arrayitems)} : {'background-color': 'white'}" -->
 <div style="padding-top: 2rem;">
   <div class="container">
     <div class="row">
-      <div class="col-sm-1 col-md-3 col-lg-4 border" style="height: 200px;" *ngFor="let arrayitems of arrayElements;let i = index;">
-            <a href=""  rel="noopener noreferrer" (click)="edit($event,i)" >
-            {{arrayitems.isedit ?  'edit' :'add'}}  
-            </a>
-          <div class="row" *ngIf="!arrayitems.isadd;else weatherinfo">
-              <div class="col-lg-6">
-                  <input class="form-control" autocomplete="off" type="text" placeholder="Enter city name" id="city"  [(ngModel)]="items[i]" name="cityname">
-              </div>
-              <div class="col-lg-3" *ngIf="items[i]">
-                <button type="button" class="btn btn-outline-primary"(click)="onClick($event,items[i],i)">
-                  Search
-                </button>
-              </div>
-          </div>
+      <div 
+        class="col-sm-1 col-md-3 col-lg-4 border defaultPro" style="height:200px;"
+        *ngFor="let arrayitems of arrayElements;let i = index;"
+        [ngClass]="(arrayitems.isedit && !arrayitems.iserror) ? getBackgroundimage(arrayitems) : none">
+
+        <a href="" (click)="edit($event,i)" class="hrefLink">
+          {{arrayitems.isedit ?  'edit' :'add'}}
+        </a>
+
+        <div class="row" *ngIf="!arrayitems.isadd;else weatherinfo">
+            <div class="col-lg-6">
+                <input class="form-control" autocomplete="off" type="text" placeholder="Enter city name" id="city"  [(ngModel)]="items[i]" name="cityname">
+            </div>
+            <div class="col-lg-3" *ngIf="items[i]">
+              <button type="button" class="btn btn-outline-primary"(click)="onClick($event,items[i],i)">
+                Search
+              </button>
+            </div>
+        </div>
           <ng-template #weatherinfo>
               <div *ngIf="(arrayitems.isedit && !arrayitems.iserror )">
                 <div class="row">
@@ -37,3 +41,6 @@
 </div>
 
 <router-outlet></router-outlet>
+
+
+
